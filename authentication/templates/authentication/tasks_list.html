@@ -1,0 +1,16 @@
+<h1> TASKS </h1>
+<br>
+<table>
+    <tr>
+        {% for task in tasks %}
+        <tr>
+            <td> {{task.question}} </td>
+        </tr>
+    </tr>
+    {% empty %}
+    <h3> No Item in the List</h3>
+    {% endfor %}
+    <br>
+
+</table>
+<hr>

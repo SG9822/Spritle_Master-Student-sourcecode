@@ -1,0 +1,21 @@
+
+{% if user.is_authenticated %}
+<h1> WELCOME TO  STUDENT HOMEPAGE </h1>
+
+
+<button type="Submit"> <a href = "{% url 'signout' %}">LogOut</a></button><br>
+
+<a href = "{%  url 'tasklist' %}">Provided Task</a><br>
+<br>
+<a href="{% url 'anslist' %}"> My Answer</a><br>
+<br>
+<a href="{% url 'input' %}"> answer </a><br>
+<br>
+
+<a href="{% url 'anscreate' %}"> Post Answer</a><br>
+<br>
+<hr>
+
+
+
+{% endif %}
